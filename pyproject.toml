@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twds0000-alignft"
+version = "0.1.0"
+description = "按安全与有用两个维度打分，标出只提升一边的结果"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "twds0000" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://twds0000.github.io"
+Repository = "https://github.com/twds0000/alignft"
+Issues = "https://github.com/twds0000/alignft/issues"
+
+[project.scripts]
+alignft = "alignft:main"
+
+[tool.setuptools]
+py-modules = ["alignft"]
